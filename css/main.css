@@ -20,11 +20,16 @@ h4{
     font-weight: 700;
 }
 
+ul{
+    list-style-type: none; 
+    padding-left: 0;       
+    margin-left: 0;        
+}
 
 /* ------ UTILITIES ------*/
 /* Layout */
 .container{
-    width: 1170px;
+    width: 1180px;
     margin:0 auto;
 }
 
@@ -43,23 +48,36 @@ h4{
     float: right;
 }
 
+
 /* Width*/
 .w25{
     width: 25%;
 }
+.w30{
+    width: 30%;
+}
 .w50{
     width: 50%;
 }
+.w70{
+    width: 70%;
+}
 
-/* Center */
-.center{
+
+/* Text Align */
+.text-align-center{
     text-align: center;
 }
+.text-align-right{
+    text-align: right;
+}
+
 
 /* Background*/
 .bg-white {
     background: #fff;
 }
+
 
 /* Font-size */
 .fs10{
@@ -69,45 +87,52 @@ h4{
     font-size: 14px;
 }
 .fs25{
-    font-size: 20px;
+    font-size: 25px;
 }
 .fs35{
-    font-size: 30px;
+    font-size: 35px;
 }
 .fs50{
     font-size: 50px;
 }
 
+/* Cursor Pointer */
+.pointer li{
+    cursor: pointer;
+}
 
 /* Margin */
 .m-right30{
-    margin-right: 25px;
+    margin-right: 30px;
 }
+
 
 /* Menu */
 .menu-inline li{
     display: inline-block;
     list-style: none;
     margin-right: 20px;
- }
+} 
 
- .menu-inline li:last-child{
-    margin-right: 0;
+.menu-inline li:last-child{
+   margin-right: 0;
 }
+
 
 /* Buttons */
 .btn{
     display: inline-block;
-    min-width: 600px;
-    padding: 10px;
+    min-width: 60px;
+    padding: 13px 10px;
     text-decoration: none;
     text-align: center;
     color: #fff;
+    background-color: #fe775a;
     border: 1px solid #fe775a;;
     border-radius: 5px;
 }
 
-.btn.btn-transaprent{
+.btn.btn-transparent{
     color:#fe775a;
     background:transparent;
     border:1px solid #fe775a;
@@ -118,11 +143,41 @@ h4{
 }
 
 .btn-effect:hover {
-    border: 1px solid;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
-    outline-color: rgba(255, 255, 255, 0);
-    outline-offset: 15px;
-    text-shadow: 1px 1px 2px #427388;
+    opacity: 40%;
+    transition: 0.2s;
 }
 
-/* HEADER */
+/* ---- HEADER ----- */
+.main-header{
+    line-height: 85px;
+}
+
+.main-header .topbar{
+    border-bottom: 1px solid #32495b;
+}
+
+/* Top-bar left*/
+.topbar .navleft a{
+    text-decoration: none;
+    color: #33475b;
+}
+
+.topbar .navleft span{
+    margin: 0 10px 0px 2px;
+}
+.topbar .navleft li:first-child{
+    line-height: 1.3;
+    padding-right: 20px;
+    border-right: 2px solid #899397;
+}
+
+/* Top-bar right*/
+.topbar .navright li:first-child{
+    color: #00a4bd;
+}
+
+.topbar .navright li{
+    line-height: 1;
+}
+
+
