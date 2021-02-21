@@ -8,7 +8,8 @@
 body{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
+    letter-spacing: -0.065em;
     color:#33475b ;
     background: #f4f9fd;
 }
@@ -48,6 +49,25 @@ ul{
     float: right;
 }
 
+/* Text Align */
+.text-align-center{
+    text-align: center;
+}
+.text-align-right{
+    text-align: right;
+}
+
+
+/* Background*/
+.bg-white {
+    background: #fff;
+}
+
+/* Cursor Pointer */
+.pointer li{
+    cursor: pointer;
+}
+
 
 /* Width*/
 .w25{
@@ -61,21 +81,6 @@ ul{
 }
 .w70{
     width: 70%;
-}
-
-
-/* Text Align */
-.text-align-center{
-    text-align: center;
-}
-.text-align-right{
-    text-align: right;
-}
-
-
-/* Background*/
-.bg-white {
-    background: #fff;
 }
 
 
@@ -96,22 +101,18 @@ ul{
     font-size: 50px;
 }
 
-/* Cursor Pointer */
-.pointer li{
-    cursor: pointer;
+/* Margin */
+.m-right25{
+    margin-right: 25px;
 }
 
-/* Margin */
-.m-right30{
-    margin-right: 30px;
-}
 
 
 /* Menu */
 .menu-inline li{
     display: inline-block;
     list-style: none;
-    margin-right: 20px;
+    margin-right: 25px;
 } 
 
 .menu-inline li:last-child{
@@ -152,32 +153,48 @@ ul{
     line-height: 85px;
 }
 
-.main-header .topbar{
+.main-header .top-bar{
     border-bottom: 1px solid #32495b;
 }
-
+/* --TOP-BAR-- */
 /* Top-bar left*/
-.topbar .navleft a{
+.top-bar .navleft a{
     text-decoration: none;
     color: #33475b;
 }
 
-.topbar .navleft span{
+.top-bar .navleft span{
     margin: 0 10px 0px 2px;
 }
-.topbar .navleft li:first-child{
+.top-bar .navleft li:first-child{
     line-height: 1.3;
     padding-right: 20px;
     border-right: 2px solid #899397;
 }
 
 /* Top-bar right*/
-.topbar .navright li:first-child{
+.top-bar .navright li:first-child{
     color: #00a4bd;
 }
 
-.topbar .navright li{
+.top-bar .navright li{
     line-height: 1;
+}
+
+
+/* --BOTTOM-BAR-- */
+.bottom-bar .logo img{
+    vertical-align: middle;
+    position: relative;
+}
+
+.bottom-bar .navright a{
+    text-decoration: none;
+    color: #33475b;
+}
+
+.bottom-bar .navright i{
+    margin-left: 15px;
 }
 
 
