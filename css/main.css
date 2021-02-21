@@ -9,9 +9,12 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    letter-spacing: -0.065em;
     color:#33475b ;
     background: #f4f9fd;
+}
+
+p{
+line-height: 30px;
 }
 
 h1,
@@ -19,6 +22,11 @@ h2,
 h3,
 h4{
     font-weight: 700;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 50px;
 }
 
 ul{
@@ -76,8 +84,14 @@ ul{
 .w30{
     width: 30%;
 }
+.w40{
+    width: 40%;
+}
 .w50{
     width: 50%;
+}
+.w60{
+    width: 60%;
 }
 .w70{
     width: 70%;
@@ -102,8 +116,11 @@ ul{
 }
 
 /* Margin */
-.m-right25{
+.mr25{
     margin-right: 25px;
+}
+.mb25{
+    margin-bottom:25px
 }
 
 
@@ -140,6 +157,7 @@ ul{
 }
 
 .btn.btn-big{
+    min-width: 185px;
     padding:20px;
 }
 
@@ -198,3 +216,36 @@ ul{
 }
 
 
+/* ---- MAIN ---- */
+/* Jumbotron */
+.jumbotron{
+    position: relative;
+    height: 685px;
+    background-image: url("../img/jumbotron.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #fff4ef;
+}
+
+.jumbotron .container{
+    position: relative;
+    height: 100%;
+}
+
+.jumbotron .jumbotron-text{
+    position: absolute;
+    left: 0%;
+    top: 35%;
+    transform: translateY(-50%);
+}
+
+
+.jumbotron .divider-bar{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 85px;
+    background-color: #afebe4;
+    border-top: 3px solid #33475b;
+    border-bottom: 3px solid #33475b;
+}
