@@ -25,8 +25,17 @@ h4{
 }
 
 h1{
-    font-weight: 700;
     font-size: 50px;
+}
+h2{
+    font-size: 32px;
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 ul{
@@ -34,6 +43,7 @@ ul{
     padding-left: 0;       
     margin-left: 0;        
 }
+
 
 /* ------ UTILITIES ------*/
 /* Layout */
@@ -65,17 +75,18 @@ ul{
     text-align: right;
 }
 
+/* White Box */
+.box{
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #3333332e;
+}
+
 
 /* Background*/
 .bg-white {
     background: #fff;
 }
-
-/* Cursor Pointer */
-.pointer li{
-    cursor: pointer;
-}
-
 
 /* Width*/
 .w25{
@@ -119,11 +130,17 @@ ul{
 .mb25{
     margin-bottom:25px
 }
-.mt50{
-    margin-top: 20px;
+.mb35{
+    margin-bottom:35px
 }
-.mr{
-    margin-right: 25px;
+.mb40{
+    margin-bottom:45px
+}
+.mb50{
+    margin-bottom:50px
+}
+.mt50{
+    margin-top: 50px;
 }
 
 
@@ -137,6 +154,17 @@ ul{
 
 .menu-inline li:last-child{
    margin-right: 0;
+}
+
+/* Cursor Pointer */
+.pointer li{
+    cursor: pointer;
+}
+
+/* Check-circle */
+li > i.fa-check-circle{
+    color: #fe775a;
+    padding-right: 10px;
 }
 
 
@@ -160,8 +188,8 @@ ul{
 }
 
 .btn.btn-big{
-    min-width: 185px;
-    padding:20px;
+    /* min-width: 185px; */
+    padding:20px 40px;
 }
 
 .btn-effect:hover {
@@ -253,11 +281,50 @@ ul{
     border-bottom: 3px solid #33475b;
 }
 
-/* FEATURE */
+/* Presentatino CRM */
 .presentation-crm{
     padding: 50px 0;
 }
 
-.cube img{
+/* Slogan */
+.slogan{
+    max-width: 820px;
+}
+
+.slogan img{
     height: 190px;
+}
+
+/* Free CRM */
+.free{
+    padding: 75px;
+}
+
+.free img{
+    height: 125px;
+}
+
+.free .free-text{
+    padding: 0 50px;
+}
+
+.free .free-text h4{
+    position: relative;
+}
+
+.free .free-text h4 span{
+    position: relative;
+    background: white;
+    padding-right: 60px;
+}
+
+.free .free-text h4::before{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #899397; 
 }
