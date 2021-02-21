@@ -74,6 +74,10 @@ ul{
 .ta-right{
     text-align: right;
 }
+.ta-left{
+    text-align: left;
+}
+
 
 /* White Box */
 .box{
@@ -95,21 +99,15 @@ ul{
 .w30{
     width: 30%;
 }
-.w40{
-    width: 40%;
-}
 .w55{
     width: 55%;
-}
-.w60{
-    width: 60%;
 }
 .w70{
     width: 70%;
 }
 
 
-/* Font-size */
+/* Font-size TextSmall*/
 .fs14{
     font-size: 14px;
 }
@@ -129,15 +127,12 @@ ul{
 .mb50{
     margin-bottom:50px
 }
+.mb55{
+    margin-bottom:55px
+}
 .mb75{
     margin-bottom: 75px;
 }
-
-/* M-Top */
-.mt50{
-    margin-top: 50px;
-}
-
 
 
 /* Menu */
@@ -152,7 +147,7 @@ ul{
 }
 
 /* Cursor Pointer */
-.pointer li{
+.pointer{
     cursor: pointer;
 }
 
@@ -215,6 +210,7 @@ li > i.fa-check-circle{
     padding-right: 20px;
     border-right: 2px solid #899397;
 }
+
 
 /* Top-bar right*/
 .top-bar .navright li:first-child{
@@ -342,13 +338,47 @@ li > i.fa-check-circle{
     border: 1px solid #899397;
 }
 
-.offer .software li{
-    text-align: left;
+/* ---- STRENGHT ---- */
+.strengths{
+    padding: 50px;
+    color: white;
+    background-image: linear-gradient(to right,#00a8ba,#00b9aa);
 }
 
+.strengths h2{
+    padding: 0 20px;
+}
 
+/* --Strengths Numbers-- */
+.strengths-numbers .top-row {
+    border-bottom: 1px solid white;
+}
 
+.strengths-numbers .top-row .number,
+.strengths-numbers .bottom-row .number {
+    padding: 20px 0 25px;
+    border-right: 1px solid white;
+}
+.strengths-numbers .top-row .number:last-child,
+.strengths-numbers .bottom-row .number:last-child{
+    border-right: none;
+}
 
+.strengths-numbers img{
+    max-height: 35px;
+}
 
+.strengths-numbers .counter{
+    font-size: 45px;
+    font-weight: 700;
+    margin: 25px 0;
+}
 
-
+.strengths-numbers .counter::after{
+    content: '+';
+    position: relative;
+    left: 3px;
+    bottom: 3px;
+    font-size: 30px;
+    font-weight: 500;
+}
