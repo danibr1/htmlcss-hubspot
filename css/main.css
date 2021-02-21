@@ -58,10 +58,10 @@ ul{
 }
 
 /* Text Align */
-.text-align-center{
+.ta-center{
     text-align: center;
 }
-.text-align-right{
+.ta-right{
     text-align: right;
 }
 
@@ -116,11 +116,14 @@ ul{
 }
 
 /* Margin */
-.mr25{
-    margin-right: 25px;
-}
 .mb25{
     margin-bottom:25px
+}
+.mt50{
+    margin-top: 20px;
+}
+.mr{
+    margin-right: 25px;
 }
 
 
@@ -248,4 +251,13 @@ ul{
     background-color: #afebe4;
     border-top: 3px solid #33475b;
     border-bottom: 3px solid #33475b;
+}
+
+/* FEATURE */
+.presentation-crm{
+    padding: 50px 0;
+}
+
+.cube img{
+    height: 190px;
 }
